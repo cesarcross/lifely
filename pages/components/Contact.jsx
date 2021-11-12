@@ -23,7 +23,7 @@ import styles from '../../styles/contact.module.scss';
    
 //   });
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <Formik
       initialValues={{ name: '', email: '', message: '' }}
@@ -83,5 +83,5 @@ export const Contact = () => {
 };
 
 
-
+export default Contact
 

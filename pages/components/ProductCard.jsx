@@ -4,7 +4,7 @@ import logo from '../../assets/images/Ver_Logo_01.png'
 
 import styles from '../../styles/ProductCard.module.scss'
 
-export const ProductCard = () => {
+const ProductCard = () => {
   return (
     <div className={styles.container} >
         <Image src={logo} alt="Lifely Logo"
@@ -16,3 +16,5 @@ export const ProductCard = () => {
     </div>
   )
 }
+
+export default ProductCard
