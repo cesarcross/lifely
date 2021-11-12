@@ -3,8 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/HomePage.module.scss'
 import logo from '../assets/images/Ver_Logo_01.png'
 import { constants } from '../utils/constants'
-import { ProductCard } from './components/ProductCard'
-import { Contact } from './components/Contact'
+import ProductCard from './components/ProductCard'
+import Contact from './components/Contact'
 
 const {about, aboutText, portfolio} = constants
 
@@ -38,7 +38,6 @@ export default function Home() {
             <div className={styles.cardsContainer}>
 
             <ProductCard/>
-
             <ProductCard/>
 
             </div>
