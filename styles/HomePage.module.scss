@@ -1,0 +1,20 @@
+.homeBannerContainer {
+  width: 100%;
+  background-color: #E5DCC3
+}
+
+.contentContainer {
+  margin: 10px;
+  margin-top: 50px;
+  max-width: 400px;
+
+  p h1 {
+    color: #343A40
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+}
