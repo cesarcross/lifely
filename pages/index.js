@@ -1,14 +1,30 @@
+// Dependencies
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/HomePage.module.scss'
-import logo from '../assets/images/Ver_Logo_01.png'
-import { constants } from '../utils/constants'
+import { useState } from 'react'
+
+// Components
 import ProductCard from './components/ProductCard'
 import Contact from './components/Contact'
+import NavbarMobile from './components/NavbarMobile'
+
+// Styles/Assets
+import logo from '../assets/images/Ver_Logo_01.png'
+import styles from '../styles/HomePage.module.scss'
+
+// Other
+import { constants } from '../utils/constants'
 
 const {about, aboutText, portfolio} = constants
 
 export default function Home() {
+
+  const [navMobile, setNavMobile] = useState(false)
+
+  const toggleNavbar = () => {
+    return setNavMobile(prevState => !prevState)
+  }
+
   return (
     <div >
       <Head>
@@ -20,9 +36,18 @@ export default function Home() {
       <main >
         <div className={styles.homeBannerContainer}>
 
-        <Image src={logo} alt="Lifely Logo"
-         width={625} height={351} 
-         />
+          <Image src={logo} alt="Lifely Logo"
+          width={625} height={351} 
+          />
+
+          <div className={styles.navbarMobile}>
+            <button onClick={() => toggleNavbar()}>X</button>
+          </div>
+        
+        </div>
+
+        <div>
+          {navMobile ? <NavbarMobile/> : null }
         </div>
 
         <div className={styles.contentContainer}>

@@ -9,7 +9,8 @@
   max-width: 400px;
 
   p h1 {
-    color: #343A40
+    color: #343A40;
+    font-family:'Titillium Web', sans-serif;
   }
 }
 
@@ -17,4 +18,10 @@
   display: flex;
   justify-content: space-around;
   // flex-wrap: wrap;
+}
+
+.navbarMobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
