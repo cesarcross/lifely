@@ -1,7 +1,23 @@
-.homeBannerContainer {
+// Navbar
+.navbarContainer {
   width: 100%;
-  background-color: #E5DCC3
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
 }
+
+.navbarMobile {
+  padding: 10px;
+  
+  button {
+    border: none
+  };
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 
 .contentContainer {
   margin: 10px;
@@ -18,10 +34,4 @@
   display: flex;
   justify-content: space-around;
   // flex-wrap: wrap;
-}
-
-.navbarMobile {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }

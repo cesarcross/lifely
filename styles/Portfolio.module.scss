@@ -1,0 +1,30 @@
+
+
+.container {
+  padding: 20px;
+  background-color: #EFEFEF;
+  
+  h2 {
+    // color: #efecea;
+    margin-top: 0;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 160px;
+  height: 200px;
+  background-color: #8fcea5;
+  border-radius: 5px;
+  margin-top: 10px;  
+
+  p {
+    text-align: center;
+  }
+}
+

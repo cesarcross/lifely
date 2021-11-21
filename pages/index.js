@@ -4,18 +4,17 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 // Components
-import ProductCard from './components/ProductCard'
+import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import NavbarMobile from './components/NavbarMobile'
 
 // Styles/Assets
 import logo from '../assets/images/Ver_Logo_01.png'
+import navicon from '../assets/images/navicon.png'
 import styles from '../styles/HomePage.module.scss'
 
 // Other
-import { constants } from '../utils/constants'
-
-const {about, aboutText, portfolio} = constants
+import About from './components/About'
 
 export default function Home() {
 
@@ -34,14 +33,17 @@ export default function Home() {
       </Head>
 
       <main >
-        <div className={styles.homeBannerContainer}>
+        {/* Navbar Container */}
+        <div className={styles.navbarContainer}>
 
           <Image src={logo} alt="Lifely Logo"
-          width={625} height={351} 
+          width={104} height={58.5} 
           />
 
           <div className={styles.navbarMobile}>
-            <button onClick={() => toggleNavbar()}>X</button>
+            <button onClick={() => toggleNavbar()}>
+              <Image src={navicon} alt="Nav Icon" width={30} height={30} />
+            </button>
           </div>
         
         </div>
@@ -50,26 +52,11 @@ export default function Home() {
           {navMobile ? <NavbarMobile/> : null }
         </div>
 
-        <div className={styles.contentContainer}>
-          <div >
-            <h1>{about}</h1>
-          <p>{aboutText}</p>
-          </div>
+        
+        
+        <About/>
 
-          <div>
-            <h1>
-              {portfolio}
-            </h1>
-            <div className={styles.cardsContainer}>
-
-            <ProductCard/>
-            <ProductCard/>
-
-            </div>
-          </div>
-
-
-        </div>
+        <Portfolio/>
 
         <Contact/>
       </main>
