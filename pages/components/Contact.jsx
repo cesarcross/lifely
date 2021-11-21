@@ -2,7 +2,7 @@ import { Formik, Field, Form, ErrorMessage, useFormik } from 'formik';
 import * as Yup from 'yup';
 // import axios from 'axios';
 // import { ToastContainer, toast } from 'react-toastify';
-import styles from '../../styles/Contact.module.scss'
+import styles from '../../styles/contact.module.scss'
 
 // const messageSent = () =>
 //   toast.success(`Thanks for your message! I'll answer soon`, {
