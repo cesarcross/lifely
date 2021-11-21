@@ -1,5 +1,5 @@
 .container {
-  background: #8fcea5;
+  background: #b8da92;
   // font-family: Helvetica, sans-serif;
   margin-top: 50px;
 
@@ -14,19 +14,6 @@
   width: 90%;
   margin: auto;
 
-  h2,
-  label {
-    // color: #84eaba;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  label {
-    font-size: 1.5rem;
-  }
-
   input {
     height: 30px;
     border-radius: 5px;
@@ -37,16 +24,12 @@
     text-decoration: none;
   }
 
-  img {
-    width: 50px;
-  }
-
   button {
     width: 200px;
-    height: 5rem;
+    height: 3rem;
     margin: 1rem auto 3rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    // font-weight: 700;
     border-radius: 10px;
   }
 
@@ -64,25 +47,25 @@
   }
 }
 
-.mobilewhats {
-  display: flex;
-  flex-direction: column;
+// .mobilewhats {
+//   display: flex;
+//   flex-direction: column;
 
-  a,
-  p {
-    margin: 0 auto 1rem;
-  }
+//   // a,
+//   // p {
+//   //   margin: 0 auto 1rem;
+//   // }
 
-  p {
-    // font-family: 'Sacramento', cursive;
-    // font-family: 'Dancing Script', cursive;
-    font-family: 'Cookie', cursive;
-    font-size: 3rem;
-    font-style: italic;
-    color: #fff;
-  }
+//   // p {
+//   //   // font-family: 'Sacramento', cursive;
+//   //   // font-family: 'Dancing Script', cursive;
+//   //   font-family: 'Cookie', cursive;
+//   //   font-size: 3rem;
+//   //   font-style: italic;
+//   //   color: #fff;
+//   // }
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row-reverse;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     flex-direction: row-reverse;
+//   }
+// }

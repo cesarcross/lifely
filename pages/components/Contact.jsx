@@ -66,13 +66,13 @@ const Contact = () => {
           <Field name='email' type='email' />
           <ErrorMessage name='email' />
 
-          <label htmlFor='message'>Menssagem</label>
+          <label htmlFor='message'>Mensagem</label>
           <Field name='message' component='textarea' rows='10' />
           <ErrorMessage name='message' />
 
           <div className={styles.mobilewhats}>
-            <a href='https://wa.me/5511981263581' target='_blank' rel="noreferrer">
-            </a>
+            {/* <a href='https://wa.me/telnumber' target='_blank' rel="noreferrer">
+            </a> */}
 
             <button type='submit'>Enviar</button>
           </div>

@@ -2,12 +2,18 @@
 
 .container {
   padding: 20px;
-  background-color: #EFEFEF;
+  background-color: #b8da92;
   
   h2 {
     // color: #efecea;
     margin-top: 0;
   }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px
 }
 
 .cardsContainer {
@@ -18,13 +24,15 @@
 
 .card {
   width: 160px;
-  height: 200px;
-  background-color: #8fcea5;
+  height: 170px;
+  background-color: #EFEFEF;
   border-radius: 5px;
   margin-top: 10px;  
 
   p {
     text-align: center;
+    padding: 10px;
+    margin-top: 30px
   }
 }
 

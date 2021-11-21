@@ -8,12 +8,12 @@ const NavbarMobile = () => {
 
   return (
     <div className={styles.container}>
-      <Link href='#about'>
+      {/* <Link href='#about'>
         <p>Sobre</p>
       </Link>
       <Link href='#portfolio'>
         <p>Portfolio</p>
-      </Link>
+      </Link> */}
       <Link href='#contact'>
         <p>Contato</p>
       </Link>
